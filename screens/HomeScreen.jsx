@@ -5,18 +5,18 @@ import EvilIcons from '@expo/vector-icons/EvilIcons';
 
 import { Ionicons } from '@expo/vector-icons';
 
-export default function HomeScreen({ navigation }) {
+export default function HomeScreen({navigation }) {
 
-  const [selected, setSelected] = useState('Wed');
+  const [selected, setSelected]=useState('Wed');
 
   const dates = [
-    { day: 'Sun', date: 22 },
-    { day: 'Mon', date: 23 },
-    { day: 'Tue', date: 24 },
-    { day: 'Wed', date: 25 },
-    { day: 'Thu', date: 26 },
-    { day: 'Fri', date: 27 },
-    { day: 'Sat', date: 28 },
+    { day:'Sun',date:22},
+    { day:'Mon',date:23},
+    { day:'Tue',date:24},
+    { day:'Wed',date:25},
+    { day:'Thu',date:26},
+    { day:'Fri',date:27},
+    { day:'Sat',date:28},
   ];
   return (
     <View >
@@ -73,11 +73,11 @@ style={[styles.date,{ color: isSelected ? '#fff' : '#333' }, ]}>
       <Text style={styles.heading}>Your plan</Text>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <View style={[styles.card, { backgroundColor: '#fbbf24' }]}>
-          <Text style={styles.level}>Medium</Text>
-          <Text style={styles.title}>Yoga Group</Text>
-          <Text style={styles.details}>25 Nov.</Text>
-          <Text style={styles.details}>14:00–15:00</Text>
-          <Text style={styles.details}>A5 room</Text>
+   <Text style={styles.level}>Medium</Text>
+  <Text style={styles.title}>Yoga Group</Text>
+  <Text style={styles.details}>25 Nov.</Text>
+   <Text style={styles.details}>14:00-15:00</Text>
+  <Text style={styles.details}>A5 room</Text>
  <View style={styles.trainerRow}>
    <Image source={{ uri: 'https://i.pravatar.cc/100?img=5' }}
               style={styles.trainerImage}
@@ -85,22 +85,22 @@ style={[styles.date,{ color: isSelected ? '#fff' : '#333' }, ]}>
    <View>
    <Text style={styles.trainerLabel}>Trainer</Text>
     <Text style={styles.trainerName}>Tiffany Way</Text>
-            </View>
-          </View>
+       </View>
+    </View>
         </View>
 
         <View style={[styles.card, { backgroundColor: '#93c5fd' }]}>
-          <Text style={styles.level}>Light</Text>
-          <Text style={styles.title}>Balance</Text>
-          <Text style={styles.details}>28 Nov.</Text>
-          <Text style={styles.details}>18:00–19:30</Text>
-          <Text style={styles.details}>A2 room</Text>
+  <Text style={styles.level}>Light</Text>
+  <Text style={styles.title}>Balance</Text>
+  <Text style={styles.details}>28 Nov.</Text>
+  <Text style={styles.details}>18:00-19:30</Text>
+  <Text style={styles.details}>A2 room</Text>
 
-          <View style={styles.iconRow}>
-            <Ionicons name="logo-instagram" size={22} color="#fff" />
-            <Ionicons name="logo-youtube" size={22} color="#fff" />
-            <Ionicons name="logo-twitter" size={22} color="#fff" />
-          </View>
+  <View style={styles.iconRow}>
+  <Ionicons name="logo-instagram" size={22} color="#fff" />
+  <Ionicons name="logo-youtube" size={22} color="#fff" />
+  <Ionicons name="logo-twitter" size={22} color="#fff" />
+  </View>
         </View>
       </ScrollView>
     </View>
